@@ -470,5 +470,8 @@ html {
   .slider-container .slider {
     flex-basis: 60%; }
 
+.result-container {
+  background-color: khaki; }
+
 .container-fluid {
   padding: 0; }
