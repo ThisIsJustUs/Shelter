@@ -13,7 +13,13 @@ html(lang='en')
 		title Shelter
 	body
 		include partials/navbar.jade
-		include partials/searchfilter.jade
+		.container-fluid
+			.row.site-content
+				.col-sm-8.left-column
+					include partials/searchfilter.jade
+				//- Right Column
+				.col-sm-4.right-column
+					#map
 		// Optional JavaScript is awesome
 		script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBkpAVG0uV_c1j68N46IL61KDxyDlploY4&callback=initMap')
 		// jQuery first, then Popper.js, then Bootstrap JS

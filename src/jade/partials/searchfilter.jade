@@ -1,53 +1,46 @@
-//- All Listings and Google Map
-.container-fluid
-  .row.site-content
-    .col-sm-8.left-column
-      .form-group.row.search-field.border-bottom
-        label.col-2.col-form-label.search-label(for='inputPassword') Search
-        .col-8.search-field-input
-          form(method="GET" action="search")
-            input#inputPassword.form-control(type='type', placeholder='Enter street, city, or area')
-        .col-2.col-form-label
-          i.fas.fa-search.fa-lg.icon-search        
-      //- Local Settings
-      .filter-selectors.border-bottom
-        .local-settings
-          .item
-            i.fas.fa-map-marker-alt.fa-lg.option-icons
-            label.col-form-label.option-label(for='inputEmail3') Region:
-            .option-selectors
-              select#inputState.form-control
-                option(selected='') London
-                option ...
-          .item
-            i.fas.fa-home.fa-lg.option-icons
-            label.col-form-label.option-label(for='inputEmail3') Neighborhood:
-            .option-selectors
-              select#inputState.form-control
-                option(selected='') London
-                option ...
-        .local-settings
-          .item
-            i.fas.fa-calendar.fa-lg.option-icons
-            label.col-form-label.option-label(for='inputEmail3') Move-in Date:
-            .option-selectors
-              select#inputState.form-control
-                option(selected='') London
-                option ...
-          .item
-            i.fas.fa-clock.fa-lg.option-icons
-            label.col-form-label.option-label(for='inputEmail3') Duration:
-            .option-selectors
-              select#inputState.form-control
-                option(selected='') London
-                option ...
-        .local-settings
-          .item
-            i.fas.fa-euro-sign.fa-lg.option-icons
-            label.col-form-label.option-label(for='inputEmail3') Price Range:
-            .slider-container
-              input#myRange.slider(type='range', min='1', max='100', value='0', style='width: 100%')
-    //- Right Column
-    .col-sm-4.right-column
-      #map
-//- /All Listings and Google Map
+//- Searchbar
+.form-group.row.search-field.border-bottom
+  label.col-2.col-form-label.search-label(for='inputPassword') Search
+  .col-8.search-field-input
+    form(method="GET" action="search")
+      input#inputPassword.form-control(type='type', placeholder='Enter street, city, or area')
+  .col-2.col-form-label
+    i.fas.fa-search.fa-lg.icon-search        
+//- Local Settings
+.filter-selectors.border-bottom
+  .local-settings
+    .item
+      i.fas.fa-map-marker-alt.fa-lg.option-icons
+      label.col-form-label.option-label(for='inputEmail3') Region:
+      .option-selectors
+        select#inputState.form-control
+          option(selected='') London
+          option ...
+    .item
+      i.fas.fa-home.fa-lg.option-icons
+      label.col-form-label.option-label(for='inputEmail3') Neighborhood:
+      .option-selectors
+        select#inputState.form-control
+          option(selected='') London
+          option ...
+  .local-settings
+    .item
+      i.fas.fa-calendar.fa-lg.option-icons
+      label.col-form-label.option-label(for='inputEmail3') Move-in Date:
+      .option-selectors
+        select#inputState.form-control
+          option(selected='') London
+          option ...
+    .item
+      i.fas.fa-clock.fa-lg.option-icons
+      label.col-form-label.option-label(for='inputEmail3') Duration:
+      .option-selectors
+        select#inputState.form-control
+          option(selected='') London
+          option ...
+  .local-settings
+    .item
+      i.fas.fa-euro-sign.fa-lg.option-icons
+      label.col-form-label.option-label(for='inputEmail3') Price Range:
+      .slider-container
+        input#myRange.slider(type='range', min='1', max='100', value='0', style='width: 100%')
