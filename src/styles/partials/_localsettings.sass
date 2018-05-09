@@ -1,0 +1,48 @@
+$iphone-width: 414px
+
+.local-settings
+  // background-color: khaki
+  width: 100%
+  display: flex
+  justify-content: space-around
+  margin: 0px 0px
+
+.item
+  // background-color: pink
+  height: 55px
+  margin: 10px 5px
+  flex-basis: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.option-label
+  font-size: 14px
+  margin: 0px 4px
+  flex-basis: 97px
+
+.option-selectors
+  #inputState
+    border-radius: 0px
+    -webkit-appearance: none
+  flex-basis: 40%
+  margin-left: 15px
+
+.option-icons
+  margin: 0 10px
+  flex-basis: 24px
+
+// Setting Wrap depending on devices
+@media (max-width: $iphone-width)
+  .local-settings
+    flex-direction: row
+    flex-wrap: wrap
+
+.filter-selectors
+  padding: 15px
+  // background-color: #89ffba
+
+.slider-container
+  flex-basis: 55%
+  .slider
+    flex-basis: 60%
