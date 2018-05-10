@@ -496,6 +496,33 @@ html {
           margin-bottom: 0px;
           font-size: 16px;
           font-weight: 600; }
+        .result-container .listing-container .card .card-body .user-info-container {
+          height: 91px;
+          width: 120px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          position: absolute;
+          float: right;
+          right: 0px;
+          bottom: 20px; }
+          .result-container .listing-container .card .card-body .user-info-container .user-canvas-border {
+            width: 68px;
+            height: 68px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease-out; }
+            .result-container .listing-container .card .card-body .user-info-container .user-canvas-border:hover {
+              background-color: #1bb019;
+              cursor: pointer; }
+            .result-container .listing-container .card .card-body .user-info-container .user-canvas-border .user-pic {
+              object-fit: cover;
+              border-radius: 50%;
+              max-width: 88%;
+              max-height: 88%; }
         .result-container .listing-container .card .card-body .date-info {
           font-size: 12px;
           font-weight: 500;
