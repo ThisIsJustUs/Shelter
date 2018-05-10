@@ -29,14 +29,34 @@ $iphone-width: 414px
           margin-bottom: 0px
           font-size: 16px
           font-weight: 600
-        .user-pic-container
+        .user-info-container
           height: 91px
           width: 120px
-          background-color: rgba(#000000, 0.4)
+          // background-color: rgba(#000000, 0.4)
+          display: flex
+          flex-wrap: wrap
+          justify-content: center
           position: absolute
           float: right
           right: 0px
           bottom: 20px
+          .user-canvas-border
+            width: 68px
+            height: 68px
+            background-color: white
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: background-color 0.5s ease-out
+            &:hover
+              background-color: #1bb019
+              cursor: pointer
+            .user-pic
+              object-fit: cover
+              border-radius: 50%
+              max-width: 88%
+              max-height: 88%
         .date-info
           font-size: 12px
           font-weight: 500
