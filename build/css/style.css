@@ -471,7 +471,27 @@ html {
     flex-basis: 60%; }
 
 .result-container {
-  background-color: khaki; }
+  background-color: khaki;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .result-container .listing-container {
+    background-color: pink;
+    padding: 10px; }
+    .result-container .listing-container .card {
+      width: 18rem; }
+      .result-container .listing-container .card .card-body {
+        padding: 10px;
+        background-color: #d1feff; }
+        .result-container .listing-container .card .card-body .card-title {
+          margin-bottom: 0px;
+          font-size: 16px;
+          font-weight: 600; }
+        .result-container .listing-container .card .card-body .date-info {
+          font-size: 12px;
+          font-weight: 300;
+          color: #ccc; }
 
 .container-fluid {
   padding: 0; }
