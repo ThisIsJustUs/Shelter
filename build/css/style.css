@@ -471,7 +471,42 @@ html {
     flex-basis: 60%; }
 
 .result-container {
-  background-color: khaki; }
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .result-container .listing-container {
+    padding: 10px;
+    margin: 5px 10px;
+    flex-basis: 45%; }
+    .result-container .listing-container .card {
+      width: 100%;
+      height: 300px;
+      border-color: #f1f1f1; }
+      .result-container .listing-container .card .image-canvas {
+        display: flex;
+        justify-content: center;
+        background-color: #f2f2f2;
+        height: 100%; }
+        .result-container .listing-container .card .image-canvas .card-img-top {
+          object-fit: scale-down; }
+      .result-container .listing-container .card .card-body {
+        padding: 10px; }
+        .result-container .listing-container .card .card-body .card-title {
+          margin-bottom: 0px;
+          font-size: 16px;
+          font-weight: 600; }
+        .result-container .listing-container .card .card-body .date-info {
+          font-size: 12px;
+          font-weight: 500;
+          color: #939393; }
+
+@media (max-width: 414px) {
+  .result-container {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .result-container .listing-container {
+      flex-basis: 100%; } }
 
 .container-fluid {
   padding: 0; }
