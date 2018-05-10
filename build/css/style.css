@@ -367,7 +367,8 @@ html {
   margin-right: 5px;
   padding: .6rem 1rem;
   font-size: 0.9rem;
-  font-weight: 700; }
+  font-weight: 700;
+  transition: background-color 0.5s cubic-bezier(0.63, 0.07, 0.24, 0.82); }
   .account-button:hover {
     text-decoration: none;
     background-color: #e2e1e1;
@@ -488,8 +489,29 @@ html {
         justify-content: center;
         background-color: #f2f2f2;
         height: 100%; }
+        .result-container .listing-container .card .image-canvas .like-container {
+          padding: 10px;
+          position: absolute;
+          right: 14px;
+          top: 17px;
+          background-color: rgba(0, 0, 0, 0.47);
+          color: white;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
         .result-container .listing-container .card .image-canvas .card-img-top {
           object-fit: scale-down; }
+        .result-container .listing-container .card .image-canvas .listing-price {
+          padding: 10px 15px;
+          border-radius: 3px;
+          position: absolute;
+          left: 0;
+          bottom: 86px;
+          background-color: rgba(0, 0, 0, 0.63);
+          color: white;
+          font-size: 14px; }
       .result-container .listing-container .card .card-body {
         padding: 10px; }
         .result-container .listing-container .card .card-body .card-title {
@@ -506,6 +528,11 @@ html {
           float: right;
           right: 0px;
           bottom: 20px; }
+          .result-container .listing-container .card .card-body .user-info-container span {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #3b3b3b; }
           .result-container .listing-container .card .card-body .user-info-container .user-canvas-border {
             width: 68px;
             height: 68px;
@@ -514,15 +541,15 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 0.5s ease-out; }
+            transition: background-color 0.5s cubic-bezier(0.4, 0, 0, 1.07); }
             .result-container .listing-container .card .card-body .user-info-container .user-canvas-border:hover {
-              background-color: #1bb019;
+              background-color: #26de81;
               cursor: pointer; }
             .result-container .listing-container .card .card-body .user-info-container .user-canvas-border .user-pic {
               object-fit: cover;
               border-radius: 50%;
-              max-width: 88%;
-              max-height: 88%; }
+              max-height: 60px;
+              max-width: 60px; }
         .result-container .listing-container .card .card-body .date-info {
           font-size: 12px;
           font-weight: 500;
