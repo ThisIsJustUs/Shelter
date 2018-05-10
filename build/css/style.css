@@ -496,6 +496,14 @@ html {
           margin-bottom: 0px;
           font-size: 16px;
           font-weight: 600; }
+        .result-container .listing-container .card .card-body .user-pic-container {
+          height: 91px;
+          width: 120px;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          float: right;
+          right: 0px;
+          bottom: 20px; }
         .result-container .listing-container .card .card-body .date-info {
           font-size: 12px;
           font-weight: 500;
