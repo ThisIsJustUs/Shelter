@@ -1,22 +1,4 @@
 @charset "UTF-8";
-.container-fluid {
-  padding: 0; }
-
-.left-column {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 0; }
-
-.right-column {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: 100vh;
-  background-color: #ccc;
-  overflow: hidden;
-  flex: 1 1 0%; }
-
 html {
   font-size: 14px; }
 
@@ -568,3 +550,28 @@ html {
     flex-wrap: wrap; }
     .result-container .listing-container {
       flex-basis: 100%; } }
+
+@media (min-width: 767px) {
+  .left-column {
+    height: calc(100vh - 63.56px); } }
+
+@media (max-width: 1020px) {
+  .site-content {
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-wrap: wrap; } }
+
+.container-fluid {
+  padding: 0; }
+  .container-fluid .site-content {
+    display: flex; }
+  .container-fluid .left-column {
+    flex: 1 1 60%;
+    overflow: scroll; }
+  .container-fluid .right-column {
+    overflow: hidden;
+    flex: 1 1 40%;
+    background-color: #ccc; }
+    .container-fluid .right-column #map {
+      height: 100%;
+      width: 100%; }

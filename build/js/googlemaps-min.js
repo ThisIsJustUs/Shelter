@@ -1,9 +1,1 @@
-function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.8514, lng: 5.6910},
-          zoom: 15
-        });
-      }
-
-
+function initMap(){map=new google.maps.Map(document.getElementById("map"),{center:{lat:-33.8688,lng:151.2093},zoom:15,default:null,fullscreenControl:!1,streetViewControl:!1,mapTypeControl:!1,zoomControlOptions:{position:google.maps.ControlPosition.LEFT_TOP},clickableIcons:!1,styles:styles})}var map,styles=[{featureType:"poi",elementType:"labels",stylers:[{visibility:"off"}]}];
