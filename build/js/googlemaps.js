@@ -18,7 +18,7 @@ function initMap() {
 // Style for Map
 var styles = [
   {
-    featureType: "poi.business",
+    featureType: "poi",
     elementType: "labels",
     stylers: [
       { "visibility": "off" }

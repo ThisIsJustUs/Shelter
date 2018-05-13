@@ -9,22 +9,21 @@ html(lang='en')
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.11/css/all.css', integrity='sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/', crossorigin='anonymous')
 		//- Personal Stylesheet
 		link(rel='stylesheet', href='css/style.css')
-		script(src='js/googlemaps.js')
 		title Shelter
 	body
 		include partials/navbar.jade
 		.container-fluid
 			.row.site-content
 				//- Left Column
-				.col-sm-8.left-column
+				.left-column
 					include partials/searchfilter.jade
 					include partials/results.jade
-				//- Right Column
-				.col-sm-4.right-column Text
+				.right-column
 					#map
 		// Optional JavaScript is awesome
-		script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBkpAVG0uV_c1j68N46IL61KDxyDlploY4&callback=initMap')
+		script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC01aM_4nfC8oLpBCp53Z9AAwcL8eP6OcE&callback=initMap')
 		// jQuery first, then Popper.js, then Bootstrap JS
 		script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ', crossorigin='anonymous')
 		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm', crossorigin='anonymous')
+		script(src='js/googlemaps.js')

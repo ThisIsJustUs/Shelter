@@ -1,24 +1,32 @@
-.container-fluid
-  padding: 0
-
-.left-column
-  overflow-x: hidden
-  overflow-y: scroll
-  padding: 0
-
-.right-column
-  position: relative
-  display: flex
-  flex-direction: column
-  max-width: 100%
-  height: 100vh
-  background-color: #ccc
-  overflow: hidden
-  flex: 1 1 0%
-
 @import "frameworks/navbar"
 @import "frameworks/toast-grid"
 @import "partials/navbar"
 @import "partials/search"
 @import "partials/localsettings"
 @import "partials/results"
+
+@media(min-width: 767px)
+  .left-column
+    height: calc(100vh - 63.56px)
+
+// Adjust to Phone Size
+@media(max-width: 1020px)
+  .site-content
+    flex-basis: 100%
+    flex-direction: column
+    flex-wrap: wrap
+
+.container-fluid
+  padding: 0
+  .site-content
+    display: flex
+  .left-column
+    flex: 1 1 60%
+    overflow: scroll
+  .right-column
+    overflow: hidden
+    flex: 1 1 40%
+    background-color: #ccc
+    #map
+      height: 100%
+      width: 100%
