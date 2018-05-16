@@ -7,8 +7,10 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Shelter</title>
+    <title>Shelter New</title>
   </head>
   <body>
     <div id="navbar" class="d-flex flex-column flex-md-row align-items-center px-md-4 border-bottom box-shadow custom-design">
@@ -82,7 +84,13 @@
           <div class="result-container">
             <div class="listing-container">
               <div class="card">
-                <div class="image-canvas"><img src="assets/Pics/flats/flatpic1.jpeg" alt="Flat Pic" class="card-img-top">
+                <div class="image-canvas">
+                  <div class="listing-carousel-container">
+                    <div class="listing-carousel">
+                      <div class="carousel-canvas-item"><img src="assets/Pics/flats/flatpic1.jpeg" alt="Flat Pic" class="card-img-top"></div>
+                      <div class="carousel-canvas-item"><img src="assets/Pics/flats/flatpic2.jpeg" alt="Flat Pic" class="card-img-top"></div>
+                    </div>
+                  </div>
                   <div class="listing-price"><span>&#8364 420</span></div>
                   <button class="btn like-container"><i class="fas fa-heart fa-xs"></i></button>
                 </div>
@@ -120,9 +128,11 @@
     <!-- Optional JavaScript is awesome-->
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01aM_4nfC8oLpBCp53Z9AAwcL8eP6OcE&amp;callback=initMap"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/googlemaps.js"></script>
   </body>
 </html>
