@@ -10,14 +10,14 @@
 .filter-selectors.border-bottom
   .local-settings
     .item
-      i.fas.fa-map-marker-alt.fa-lg.option-icons
+      img.search-icon(src='assets/Icons/place.svg')
       label.col-form-label.option-label(for='inputEmail3') Region:
       .option-selectors
         select#inputState.form-control
           option(selected='') London
           option ...
     .item
-      i.fas.fa-home.fa-lg.option-icons
+      img.search-icon(src='assets/Icons/house.svg')
       label.col-form-label.option-label(for='inputEmail3') Neighborhood:
       .option-selectors
         select#inputState.form-control
@@ -25,14 +25,14 @@
           option ...
   .local-settings
     .item
-      i.fas.fa-calendar.fa-lg.option-icons
+      img.search-icon(src='assets/Icons/calendar.svg')
       label.col-form-label.option-label(for='inputEmail3') Move-in Date:
       .option-selectors
         select#inputState.form-control
           option(selected='') London
           option ...
     .item
-      i.fas.fa-clock.fa-lg.option-icons
+      img.search-icon(src='assets/Icons/time.svg')
       label.col-form-label.option-label(for='inputEmail3') Duration:
       .option-selectors
         select#inputState.form-control
@@ -40,8 +40,8 @@
           option ...
   .local-settings
     .item
-      i.fas.fa-clock.fa-lg.option-icons
-      label.col-form-label.option-label(for='inputEmail3') Duration:
+      img.search-icon(src='assets/Icons/money.svg')
+      label.col-form-label.option-label(for='inputEmail3') Price Range:
       .slider-container
         input#myRange.slider(type='range', min='1', max='100', value='0', style='width: 100%')
         #min-range.price-label €100
