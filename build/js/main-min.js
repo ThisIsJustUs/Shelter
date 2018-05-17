@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".listing-carousel").slick()});
+$(document).ready(function(){$(".listing-carousel").slick({arrows:!0})});

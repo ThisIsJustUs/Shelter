@@ -490,8 +490,17 @@ html {
             right: 0;
             left: 0;
             overflow: hidden; }
+            .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .slick-arrow {
+              z-index: 1; }
+            .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .slick-prev {
+              left: 20px; }
+            .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .slick-next {
+              right: 20px; }
             .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .carousel-canvas-item {
-              max-width: 319.09px; }
+              max-width: 319.09px;
+              max-height: 239.89px;
+              display: flex !important;
+              justify-content: center; }
         .result-container .listing-container .card .image-canvas .like-container {
           padding: 10px;
           position: absolute;

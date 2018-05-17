@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  $('.listing-carousel').slick();
+  $('.listing-carousel').slick({
+    arrows: true,
+  });
 });
