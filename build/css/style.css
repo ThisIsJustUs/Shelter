@@ -408,8 +408,10 @@ html {
   padding-right: 5px;
   text-align: center; }
 
-.icon-search {
-  font-size: 20px; }
+.search-icon {
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px; }
 
 .filter-selectors {
   padding: 15px; }
@@ -497,7 +499,7 @@ html {
             .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .slick-next {
               right: 20px; }
             .result-container .listing-container .card .image-canvas .listing-carousel-container .listing-carousel .carousel-canvas-item {
-              max-width: 319.09px;
+              max-width: 348px;
               max-height: 239.89px;
               display: flex !important;
               justify-content: center; }
@@ -545,6 +547,7 @@ html {
           bottom: 20px; }
           .result-container .listing-container .card .card-body .user-info-container span {
             margin-top: 5px;
+            min-width: 55px;
             font-size: 14px;
             font-weight: 700;
             color: #3b3b3b; }
@@ -592,11 +595,11 @@ html {
   .container-fluid .site-content {
     display: flex; }
   .container-fluid .left-column {
-    flex: 1 1 60%;
+    flex: 1 1 65%;
     overflow: scroll; }
   .container-fluid .right-column {
     overflow: hidden;
-    flex: 1 1 40%;
+    flex: 1 1 35%;
     background-color: #ccc; }
     .container-fluid .right-column #map {
       height: 100%;
